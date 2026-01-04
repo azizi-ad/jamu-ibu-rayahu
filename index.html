@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="description"
+content="UMKM Jamu Tradisional Ibu Rahayu – usaha jamu herbal rumahan di Desa Pulau Tujuh, Pamenang. Menyediakan jamu kunyit, kunyit asam, dan pahitan.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMKM Jamu Tradisional Ibu Rahayu</title>
+
+  <style>
+    :root{
+      --primary:#8b5e34;
+      --accent:#c49a6c;
+      --bg:#fff9f0;
+      --text:#2c2c2c;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:system-ui, Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+
+    nav{
+      background:#ffffffcc;
+      backdrop-filter:blur(6px);
+      padding:10px 18px;
+      position:sticky;
+      top:0;
+      z-index:10;
+      border-bottom:1px solid #e6e1d8;
+      display:flex;
+      justify-content:center;
+      gap:18px;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--primary);
+      font-weight:600;
+      font-size:.9rem;
+      padding:6px 10px;
+      border-radius:8px;
+      transition:.25s;
+    }
+    nav a:hover{ background:#f3e7d9; }
+
+    header{
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.65)),
+        url("semua.jpg");
+      background-size:cover;
+      background-position:center;
+      padding:90px 20px;
+      text-align:center;
+      color:white;
+    }
+    header h1{ margin:0 0 8px; font-size:2.2rem; }
+    header p{ max-width:640px; margin:0 auto; opacity:.95; }
+
+    section{
+      padding:34px 18px;
+      max-width:1100px;
+      margin:auto;
+    }
+    h2{ margin-top:0; color:var(--primary); }
+
+    .section-head{
+      display:flex; align-items:center; gap:10px; margin-bottom:6px;
+    }
+    .line{ flex:1; height:2px; background:#e2d5c4; }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:18px;
+    }
+    .card{
+      background:white;
+      border-radius:16px;
+      padding:14px;
+      box-shadow:0 10px 28px rgba(0,0,0,.08);
+      transition:.25s;
+      border:1px solid #eee3d3;
+    }
+    .card:hover{ transform:translateY(-4px); }
+    .card img{
+      width:100%; border-radius:12px; aspect-ratio:4/3; object-fit:cover;
+    }
+
+    .about,.contact{
+      background:white;
+      border-radius:18px;
+      padding:18px;
+      box-shadow:0 12px 32px rgba(0,0,0,.08);
+      border:1px solid #e6dccd;
+    }
+
+    .note-kkn{
+      margin-top:6px;
+      padding:10px 12px;
+      background:#f6eee1;
+      border-left:4px solid var(--primary);
+      border-radius:10px;
+      font-size:.95rem;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:12px 18px;
+      border-radius:12px;
+      background:linear-gradient(135deg, var(--primary), var(--accent));
+      color:white;
+      text-decoration:none;
+      font-weight:700;
+      box-shadow:0 8px 20px rgba(0,0,0,.18);
+      transition:.25s;
+    }
+    .btn:hover{ transform:translateY(-2px); }
+
+    footer{
+      text-align:center;
+      padding:22px;
+      background:#efe6d9;
+      font-size:.9rem;
+      line-height:1.5;
+    }
+
+    @media(max-width:600px){
+      header{ padding:70px 18px; }
+      header h1{ font-size:1.7rem; }
+      .btn{ width:100%; text-align:center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <header id="beranda">
+    <h1>UMKM Jamu Tradisional Ibu Rahayu</h1>
+    <p>Jamu racikan alami — higienis, berkualitas, dan dibuat dari bahan pilihan warisan tradisi.</p>
+  </header>
+
+  <section id="produk">
+    <div class="section-head">
+      <h2>Produk Jamu</h2><div class="line"></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="Kunyit-asem.jpg.jpeg" alt="Kunyit Asam">
+        <h3> Jamu Asam</h3>
+        <p>Menyegarkan tubuh serta membantu meredakan pegal & kelelahan.</p>
+        <a class="btn" href="produk-kunyit-asam.html">Lihat Detail</a>
+      </div>
+
+      <div class="card">
+        <img src="Kunyit-Murni.jpeg" alt="Kunyit Murni">
+        <h3>Jamu Kunyit </h3>
+        <p>Membantu menjaga stamina dan cocok diminum untuk kebugaran harian.</p>
+        <a class="btn" href="produk-kunyit-murni.html">Lihat Detail</a>
+      </div>
+
+      <div class="card">
+        <img src="pahitan.jpeg" alt="Pahitan">
+        <h3>Jamu Pahitan</h3>
+        <p>Diformulasikan untuk kesehatan pencernaan & daya tahan tubuh.</p>
+        <a class="btn" href="produk-pahitan.html">Lihat Detail</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="about">
+    <div class="section-head">
+      <h2>Tentang UMKM</h2><div class="line"></div>
+    </div>
+
+    <p>
+  <b>UMKM Jamu Tradisional Ibu Rahayu</b> merupakan usaha rumahan yang bergerak
+  di bidang produksi jamu herbal tradisional. Usaha ini berkomitmen
+  mempertahankan cita rasa dan khasiat jamu asli Indonesia dengan tetap
+  mengutamakan kualitas bahan baku, kebersihan proses pembuatan, serta
+  konsistensi rasa pada setiap produk yang dihasilkan.
+</p>
+
+<p>
+  Bahan jamu yang digunakan berasal dari rempah-rempah pilihan seperti kunyit,
+  temulawak, jahe, asam jawa, dan berbagai tanaman herbal lainnya. Seluruh
+  proses peracikan dilakukan secara higienis dengan resep turun-temurun yang
+  telah dipercaya oleh masyarakat sebagai minuman herbal untuk menjaga
+  kebugaran dan kesehatan tubuh.
+</p>
+
+<p>
+  UMKM Jamu Tradisional Ibu Rahayu tidak hanya berperan sebagai pelaku usaha,
+  tetapi juga sebagai bagian dari upaya pelestarian budaya jamu tradisional.
+  Di tengah perkembangan zaman, keberadaan UMKM ini membantu menjaga warisan
+  kearifan lokal sekaligus menghadirkan produk herbal yang tetap relevan dan
+  mudah dijangkau oleh masyarakat.
+</p>
+
+<p>
+  Melalui pengembangan pemasaran dan peningkatan kualitas layanan, UMKM Jamu
+  Tradisional Ibu Rahayu diharapkan dapat terus bertumbuh, memperluas jangkauan
+  pasar, serta memberikan kontribusi positif terhadap perekonomian keluarga dan
+  masyarakat sekitar.
+</p>
+
+    <p>
+      Website ini dibuat sebagai bentuk dukungan mahasiswa melalui
+      <b>Program KKN Individu</b>, dengan tujuan membantu promosi dan
+      digitalisasi pemasaran UMKM Jamu Tradisional Ibu Rahayu.
+    </p>
+
+    <div class="note-kkn">
+      Program ini berfokus pada pemberdayaan UMKM lokal melalui penguatan branding,
+      peningkatan literasi digital, dan pemasaran berbasis teknologi.
+    </div>
+  </section>
+
+  <section id="kontak" class="contact">
+    <div class="section-head">
+      <h2>Kontak & Pemesanan</h2><div class="line"></div>
+    </div>
+
+    <p><b>Alamat:</b> Desa Pulau Tujuh, Kecamatan Pamenang</p>
+    <p><b>WhatsApp:</b> 0895-3263-59666</p>
+    
+
+    <a class="btn"
+       href="https://api.whatsapp.com/send?phone=62895326359666&text=Halo%20Ibu%20Rahayu,%20saya%20ingin%20pesan%20jamu."
+       target="_blank">
+       Pesan via WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2026 UMKM Jamu Tradisional Ibu Rahayu<br>
+     <b>Program KKN Universitas Merangin</b>
+  </footer>
+
+</body>
+</html>
